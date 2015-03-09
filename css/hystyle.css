@@ -1,0 +1,168 @@
+* {margin: 0; padding: 0; color: #333333; outline: none; font-size: 14px; list-style: none; font-family: 微软雅黑; word-break: break-all; text-decoration: none; border-collapse: collapse;}
+a img {border: none;}
+.even {background: #F2F2F2;}
+.clear {clear: both; display: none;}
+.table {width: 100%; display: table;}
+.select {width: 100px; padding: 5px; border: 1px solid #DDDDDD;}
+.width {width: 900px; margin: 0 auto;}
+
+/* 头部 */
+#header {height: 100px;}
+#header #topbar {height: 30px; line-height: 30px; text-align: right;}
+#header #topbar #login {color: #000000; padding: 0 5px; font-size: 14px;}
+#header #topbar #regist {color: #000000; padding: 0 5px; font-size: 14px;}
+#header #navbox #logo {float: left; width: 180px;}
+#header #navbox #menu {float: right; width: 660px; margin-top: 1px;}
+#header #navbox #menu li {width: 110px; line-height: 40px; text-align: center; float: left; position: relative; z-index: 9; background: #FFFFFF;}
+#header #navbox #menu li a {display: block; font-size: 16px; border: 1px solid #FFFFFF;}
+#header #navbox #menu li a:hover {color: #D74140; border-color: #CCCCCC;}
+#header #navbox #menu li a.active {color: #D74140; border-color: #CCCCCC;}
+#header #navbox #menu #child {width: 110px; position: relative; z-index: 9; display: none;}
+#header #navbox #menu #child li a {border: 1px solid #CCCCCC; border-top: none;}
+#header #navbox #menu #child li a:hover {background: #E95C51; color: #FFFFFF;}
+
+/* 轮播图 */
+#slider {height: 440px; overflow: hidden; position: relative;}
+#slider #imgbox {width: 100%; height: 100%; position: absolute; overflow: hidden;}
+#slider #imgbox ul {position: absolute; left: 0; overflow: hidden; height: 615px;}
+#slider #imgbox ul li {width: 900px; float: left;}
+#slider #imgbox ul li .video {width: 100px; height: 65px; border: 1px solid #DDDDDD; left: 45px; display: inline-block; position: relative; top: -120px;}
+#slider #imgbox ul li .video img {width: 100px; height: 65px; position: relative;}
+/*#slider #imgbox ul li .video span {width: 100px; height: 65px; background: url('../img/21-1.png') no-repeat; position: relative; left: -60px; top: -26px;}*/
+#slider #numbox {width: 100%; height: 20px; position: absolute; bottom: 0; padding: 10px; z-index: 8; text-align: center;}
+#slider #numbox span {width: 15px; height: 15px; background: #F0DBCA; border-radius: 10px; margin: 0 5px; display: inline-block; cursor: pointer;}
+#slider #numbox .active {background: #866D5E;}
+
+/* 首页 */
+#center {display: table; overflow: hidden;}
+#center .block {margin: 20px 0; padding: 30px 0;}
+#center .block ul {text-align: center;}
+#center .block ul li {width: 300px; float: left; margin: 5px 0;}
+#center .hezuo {width: 900px; display: table; position: relative; overflow: hidden;}
+#center .hezuo h1 {font-size: 18px; line-height: 35px;}
+#center .hezuo ul li {width: 150px; height: 60px; float: left;}
+#center .hezuo ul li img {width: 100%; height: 100%;}
+#center .hezuo .slider {height: 100px; border: 1px solid #E8DFD9; border-radius: 3px; position: relative;}
+#center .hezuo .slider .imgbox {position: absolute; width: 900px; height: 130px; overflow: hidden;}
+#center .hezuo .slider .imgbox ul {height: 70px; overflow: hidden; position: relative;}
+#center .hezuo .slider .imgbox ul li {width: 150px; height: 60px; overflow: hidden; float: left; text-align: center; margin: 5px 0;}
+#center .hezuo .slider .imgbox ul li img {width: 140px; height: 58px;}
+#center .hezuo .slider .numbox {position: absolute; height: 20px; top: 75px; width: 100%; text-align: center; z-index: 9;}
+#center .hezuo .slider .numbox span {width: 10px; height: 10px; background: #F0DBCA; border-radius: 10px; margin: 0 5px; display: inline-block; cursor: pointer;}
+#center .hezuo .slider .numbox .active {background: #866D5E;}
+
+#message {width: 150px; display: table; text-align: center; position: fixed; top: 120px; z-index: 9999; background: #FFFFFF;}
+#message #code {width: 150px; height: 190px; position: relative;}
+#message #code #img {width: 150px; height: 150px; position: relative;}
+#message #code #img img {width: 100%;}
+#message #code p {font-size: 12px; text-align: center;}
+#message #item {position: relative; background: #D90203;}
+#message #item p {padding: 3px 5px; font-size: 14px; color: #FFFFFF;}
+#message #item #about {cursor: pointer; padding: 10px 5px;}
+
+#masker {width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 999998; background: #000000; filter: alpha(opacity=50); opacity: 0.5; display: none;}
+#dialog {background: #FFFFFF; position: absolute; z-index: 999999; display: none;}
+#dialog #thead {height: 35px;}
+#dialog #thead h1 {height: 35px; line-height: 35px; padding: 0 10px; font-size: 16px; float: left; color: #D90203;}
+#dialog #thead #close {width: 20px; height: 20px; margin: 7px 10px; font-size: 12px; text-align: center; overflow: hidden; float: right; cursor: pointer; background: url('../img/close.png') no-repeat center center; text-indent: -9999px}
+#dialog #tbody {overflow: hidden;}
+
+#dialog #tbody .item {width: 400px; display: table; margin: 10px 35px;}
+#dialog #tbody .item .title {width: 150px; height: 25px; float: left;}
+#dialog #tbody .item .title s {color: #D90203; font-family: 宋体; margin-right: 5px;}
+#dialog #tbody .item .notice {width: 250px; height: 25px; float: right; color: #D90203; line-height: 25px; text-align: right; font-size: 12px;}
+#dialog #tbody .item .boxarea {width: 380px; height: 25px; border: 1px solid #CCCCCC; padding: 5px 10px;}
+#dialog #tbody .item .boxarea input {width: 100%; height: 100%; border: none;}
+#dialog #tbody .item .boxarea textarea {width: 100%; height: 100%; border: none; resize: none;}
+#dialog #tbody .item #service ul li {width: 105px; height: 30px; border: 1px solid #CCCCCC; float: left; margin: 5px 0; font-size: 12px; line-height: 30px; padding: 0 5px; position: relative; cursor: pointer;}
+#dialog #tbody .item #service ul li i {width: 15px; height: 15px; position: absolute; right: 6px; top: 6px; background: url('../img/choose-1.png') no-repeat; display: inline-block;}
+#dialog #tbody .item #service ul .on {border-color: #C32419;}
+#dialog #tbody .item #service ul .on i {background: url('../img/choose-2.png') no-repeat;}
+#dialog #tbody .item #submit {width: 150px; height: 40px; border: 1px solid #D90203; background: #D90203; color: #FFFFFF; cursor: pointer;}
+
+/* 栏目图片 */
+#image {height: 270px; margin-bottom: 20px; overflow: hidden;}
+
+/* 空间大数据 */
+#center .service {margin: 40px 0;}
+#center .service .title {width: 550px; float: left;}
+#center .service .title h1 {font-size: 20px; padding: 20px 0 0 30px;}
+#center .service .title h2 {font-size: 16px; font-weight: normal; padding: 5px 30px; line-height: 25px;}
+#center .service .content {width: 350px; float: right; text-align: center; overflow: hidden; padding-top: 40px;}
+#center #arshow {height: 525px; padding-top: 30px; margin: 20px 0; background: #F2F2F2;}
+#center #arshow .title {text-align: center; width: 100%;}
+#center #arshow .title h1 {font-size: 20px; font-weight: normal;}
+#center #arshow .title h2 {width: 800px; text-align: center; margin: 0 auto; font-size: 16px; font-weight: normal; padding: 20px 0 30px; line-height: 25px;}
+#center #arshow .content {width: 100%; text-align: center; overflow: hidden;}
+
+/* 解决方案 */
+#center .rows {margin: 20px 0;}
+#center .rows .title {text-align: center; width: 100%;}
+#center .rows .title h1 {font-size: 20px; line-height: 40px;}
+#center .rows .title h2 {width: 800px; text-align: center; margin: 0 auto; font-size: 16px; font-weight: normal; line-height: 35px;}
+#center .rows .title h2 font {font-size: 16px; color: #008ED6;}
+#center .rows .content {width: 100%; text-align: center; overflow: hidden;}
+
+#center .scheme {margin: 30px 0;}
+#center .scheme .title {text-align: center; float: left; width: 600px;}
+#center .scheme .title h1 {font-size: 18px; font-weight: normal; padding-top: 25px; line-height: 30px;}
+#center .scheme .title h2 {text-align: center; margin: 0 auto; font-size: 15px; font-weight: normal; padding: 5px 30px; line-height: 25px;}
+#center .scheme .title h2 table {border: 1px solid #CCCCCC; margin-top: 10px;}
+#center .scheme .title h2 table td {width: 150px; border: 1px solid #CCCCCC;}
+#center .scheme .content {width: 300px; float: right; text-align: center; overflow: hidden;}
+
+#center .block ul li p {width: 300px; display: table; font-size: 16px; font-weight: bold;}
+
+/* 技术优势 */
+#center .support {margin: 50px 0;}
+#center .support .title {text-align: center; float: left; width: 500px;}
+#center .support .title h1 {font-size: 20px; padding-top: 50px;}
+#center .support .title h2 {text-align: left; margin: 0 auto; font-size: 16px; font-weight: normal; padding: 5px 30px; line-height: 25px;}
+#center .support .title h2 font {font-size: 16px; color: #008ED6;}
+#center .support .content {width: 400px; float: right; text-align: center; overflow: hidden;}
+
+#center #dingwei {height: 330px; background: url('../img/support-6.png') no-repeat center center; margin: 20px 0;}
+#center #dingwei #title {text-align: center; width: 100%;}
+#center #dingwei #title h1 {color: #FFFFFF; font-size: 22px; margin: 25px 0;}
+#center #dingwei #content {width: 100%; text-align: center; overflow: hidden;}
+#center #dingwei #content #left {width: 450px; float: left; text-align: left;}
+#center #dingwei #content #right {width: 450px; float: right; text-align: left;}
+#center #dingwei #content h2 {color: #FFFFFF; line-height: 40px; font-size: 18px; margin-left: 20px;}
+#center #dingwei #content ul {width: 400px; margin-left: 20px;}
+#center #dingwei #content ul li {line-height: 35px; font-size: 17px; color: #FFFFFF;}
+
+/* 案例分享 */
+#center .sample {margin: 30px 0;}
+#center .sample .title {text-align: center; float: left; width: 500px; padding: 30px 0;}
+#center .sample .title h1 {font-size: 26px; font-weight: normal; padding-top: 40px; color: #56A25B;}
+#center .sample .title h2 {text-align: center; margin: 0 auto; font-size: 15px; font-weight: normal; padding: 5px 30px; line-height: 25px;}
+#center .sample .title h2 font {font-size: 14px; color: #008ED6;}
+#center .sample .content {width: 400px; float: right; text-align: center; overflow: hidden; padding: 30px 0;}
+
+#center #map {margin: 20px 0;}
+#center #map #left {width: 400px; float: left; padding-left: 40px;}
+#center #map #right {width: 460px; float: right; padding-top: 80px;}
+#center #map #right h1 {font-size: 20px; line-height: 40px; margin-top: 20px;}
+#center #map #right h2 {font-size: 18px; line-height: 35px; font-weight: normal; text-align: left;}
+#center #down {height: 55px; text-align: center;}
+#center #down a {width: 150px; height: 55px; display: inline-block;}
+#center #down .ios {background: url('../img/sample-ios.png') no-repeat;}
+#center #down .android {background: url('../img/sample-android.png') no-repeat;}
+
+/* 关于我们 */
+#center #content {margin: 20px 0;}
+#center #content p {line-height: 35px; font-size: 18px; margin-bottom: 40px;}
+#center #address {margin: 20px 0; background: #F2F2F2;}
+#center #address #left {width: 400px; float: left;}
+#center #address #right {width: 460px; float: right;}
+#center #address #right h1 {font-size: 18px; line-height: 35px; margin-top: 20px;}
+#center #address #right h2 {font-size: 16px; line-height: 30px; font-weight: normal; text-align: left;}
+
+/* 底部 */
+#footer {height: 100px; background: #000000;}
+#footer #navarea {height: 50px; text-align: center;}
+#footer #navarea ul {width: 720px; margin: 0 auto;}
+#footer #navarea li {float: left; width: 120px; margin-top: 20px;}
+#footer #navarea li a {color: #FFFFFF; font-size: 16px;}
+#footer #copyright {height: 40px;}
+#footer #copyright p {margin-top: 10px; text-align: center; color: #929292; font-size: 14px; font-weight: normal;}
